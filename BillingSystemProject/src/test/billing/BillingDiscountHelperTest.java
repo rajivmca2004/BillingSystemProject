@@ -189,7 +189,6 @@ public class BillingDiscountHelperTest {
 			bill.setUser(user);
 			
 			discountHelper.getNetPayableAmount(bill);
-			Assert.fail("It should throw IllegalArgumentException for null value of Bill Item");
 		}
 	
 	// Test for null Bill object
@@ -197,7 +196,6 @@ public class BillingDiscountHelperTest {
 	public void testGetNetPayableAmountforNullBill() {
 		bill = null;
 		discountHelper.getNetPayableAmount(bill);
-		Assert.fail("It should throw IllegalArgumentException for null value of Bill Object");
 	}
 	
 	//Test for null Bill item 
@@ -209,7 +207,6 @@ public class BillingDiscountHelperTest {
 		bill.setUser(user);
 		bill.setItembill(null);
 		discountHelper.getNetPayableAmount(bill);
-		Assert.fail("It should throw IllegalArgumentException for null value of Bill Item object");
 	}
 	
 	//Test for null User Object
@@ -228,10 +225,8 @@ public class BillingDiscountHelperTest {
 			bill.setUser(null);
 			
 			discountHelper.getNetPayableAmount(bill);
-			Assert.fail("It should throw IllegalArgumentException for null value of User object");
 		}
 		
-	
 	//Test for null/empty Bill Type 
 		@Test(expected=IllegalArgumentException.class)
 		public void testGetNetPayableAmountforNullBillType() {
@@ -272,7 +267,6 @@ public class BillingDiscountHelperTest {
 					bill.setUser(user);
 					
 					discountHelper.getNetPayableAmount(bill);
-					Assert.fail("It should throw IllegalArgumentException for null value of Bill Item");
 				}
 				
 		@After
