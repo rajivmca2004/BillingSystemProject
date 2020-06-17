@@ -11,4 +11,3 @@ Github location: https://github.com/rajivmca2004/RajivSrivstava_CodeExercise
 
 Thanks & Regards;
 Rajiv Srivastava
-My blog: http://javatechnical.blogspot.in
